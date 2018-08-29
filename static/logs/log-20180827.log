@@ -1,0 +1,81 @@
+ERROR - 10:39:51 --> 404 Page Not Found: Application/views
+ERROR - 10:47:26 --> 404 Page Not Found: Msgboard/index
+ERROR - 10:48:01 --> Severity: Error --> Call to undefined function base_url() D:\wamp64\www\CI3.0\application\views\msgboard.php 6
+ERROR - 10:49:42 --> 404 Page Not Found: Msgboard/index
+ERROR - 11:10:31 --> 404 Page Not Found: Msboard/public
+ERROR - 11:25:37 --> 404 Page Not Found: Msgboard/index
+ERROR - 13:52:55 --> Severity: Error --> Call to a member function select() on null D:\wamp64\www\CI3.0\application\models\Msgboard_model.php 82
+ERROR - 14:23:50 --> 404 Page Not Found: Setmessage/index
+ERROR - 14:24:36 --> 404 Page Not Found: Setmessage/index
+ERROR - 14:25:04 --> Severity: Error --> Call to a member function set_messages() on null D:\wamp64\www\CI3.0\application\controllers\Msgboard.php 32
+ERROR - 14:26:04 --> Severity: Error --> Call to a member function set_messages() on null D:\wamp64\www\CI3.0\application\controllers\Msgboard.php 32
+ERROR - 14:27:52 --> Severity: Error --> Call to undefined method Msgboard_model::set_messages() D:\wamp64\www\CI3.0\application\controllers\Msgboard.php 34
+ERROR - 14:28:24 --> Severity: Error --> Call to undefined method Msgboard_model::setmessages() D:\wamp64\www\CI3.0\application\controllers\Msgboard.php 34
+ERROR - 15:17:04 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp64\www\CI3.0\application\views\msgboard.php 37
+ERROR - 16:04:02 --> Severity: Error --> Call to a member function num_rows() on null D:\wamp64\www\CI3.0\application\controllers\Msgboard.php 21
+ERROR - 16:04:19 --> Severity: Error --> Call to a member function initialize() on null D:\wamp64\www\CI3.0\application\controllers\Msgboard.php 28
+ERROR - 16:05:26 --> Severity: Error --> Unsupported operand types D:\wamp64\www\CI3.0\system\libraries\Pagination.php 404
+ERROR - 16:06:17 --> Severity: Error --> Unsupported operand types D:\wamp64\www\CI3.0\system\libraries\Pagination.php 404
+ERROR - 16:10:00 --> Severity: Warning --> Cannot modify header information - headers already sent by (output started at D:\wamp64\www\CI3.0\system\libraries\Pagination.php:404) D:\wamp64\www\CI3.0\system\core\Common.php 521
+ERROR - 16:10:00 --> Severity: Error --> Unsupported operand types D:\wamp64\www\CI3.0\system\libraries\Pagination.php 404
+ERROR - 16:12:22 --> Severity: Warning --> Cannot modify header information - headers already sent by (output started at D:\wamp64\www\CI3.0\system\libraries\Pagination.php:404) D:\wamp64\www\CI3.0\system\core\Common.php 521
+ERROR - 16:12:22 --> Severity: Error --> Unsupported operand types D:\wamp64\www\CI3.0\system\libraries\Pagination.php 404
+ERROR - 16:13:12 --> 404 Page Not Found: Msgboard/5
+ERROR - 16:17:00 --> Severity: Warning --> Illegal string offset 'total_row' D:\wamp64\www\CI3.0\application\controllers\Msgboard.php 23
+ERROR - 16:17:28 --> Severity: Warning --> Cannot modify header information - headers already sent by (output started at D:\wamp64\www\CI3.0\system\libraries\Pagination.php:404) D:\wamp64\www\CI3.0\system\core\Common.php 521
+ERROR - 16:17:28 --> Severity: Error --> Unsupported operand types D:\wamp64\www\CI3.0\system\libraries\Pagination.php 404
+ERROR - 16:21:59 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp64\www\CI3.0\application\views\msgboard.php 37
+ERROR - 16:25:26 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp64\www\CI3.0\application\views\msgboard.php 37
+ERROR - 16:26:35 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp64\www\CI3.0\application\views\msgboard.php 37
+ERROR - 16:27:01 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp64\www\CI3.0\application\views\msgboard.php 37
+ERROR - 16:27:34 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp64\www\CI3.0\application\views\msgboard.php 37
+ERROR - 16:31:48 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp64\www\CI3.0\application\views\msgboard.php 37
+ERROR - 16:32:27 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp64\www\CI3.0\application\views\msgboard.php 37
+ERROR - 16:34:40 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp64\www\CI3.0\application\views\msgboard.php 37
+ERROR - 16:47:11 --> Severity: Warning --> Invalid argument supplied for foreach() D:\wamp64\www\CI3.0\application\views\msgboard.php 37
+ERROR - 17:45:12 --> Severity: Error --> Call to a member function getmessage() on null D:\wamp64\www\CI3.0\application\controllers\Msgboard.php 36
+ERROR - 18:28:06 --> Severity: Error --> Call to undefined function count_all_results() D:\wamp64\www\CI3.0\application\models\Msgboard_model.php 94
+ERROR - 18:43:11 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-5' at line 4 - Invalid query: SELECT `user_name`, `message`, `time`
+FROM `messages`
+ORDER BY `time` DESC
+ LIMIT 5, -5
+ERROR - 18:55:58 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-3' at line 4 - Invalid query: SELECT `user_name`, `message`, `time`
+FROM `messages`
+ORDER BY `time` DESC
+ LIMIT 5, -3
+ERROR - 18:56:10 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-3' at line 4 - Invalid query: SELECT `user_name`, `message`, `time`
+FROM `messages`
+ORDER BY `time` DESC
+ LIMIT 5, -3
+ERROR - 18:57:56 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-3' at line 4 - Invalid query: SELECT `user_name`, `message`, `time`
+FROM `messages`
+ORDER BY `time` DESC
+ LIMIT 5, -3
+ERROR - 18:58:53 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-3' at line 4 - Invalid query: SELECT `user_name`, `message`, `time`
+FROM `messages`
+ORDER BY `time` DESC
+ LIMIT 5, -3
+ERROR - 19:01:04 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-3, 5' at line 4 - Invalid query: SELECT `user_name`, `message`, `time`
+FROM `messages`
+ORDER BY `time` DESC
+ LIMIT -3, 5
+ERROR - 19:30:18 --> 404 Page Not Found: Msgboard/msgboard
+ERROR - 19:31:03 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-3' at line 4 - Invalid query: SELECT `user_name`, `message`, `time`
+FROM `messages`
+ORDER BY `time` DESC
+ LIMIT 4, -3
+ERROR - 19:33:11 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-3' at line 4 - Invalid query: SELECT `user_name`, `message`, `time`
+FROM `messages`
+ORDER BY `time` DESC
+ LIMIT 4, -3
+ERROR - 20:13:21 --> 404 Page Not Found: Msgboard/msgboard
+ERROR - 22:02:58 --> Severity: Warning --> mysqli_real_escape_string() expects exactly 2 parameters, 1 given D:\wamp64\www\CI3.0\application\controllers\Msgboard.php 60
+ERROR - 22:02:58 --> Severity: Warning --> mysqli_real_escape_string() expects exactly 2 parameters, 1 given D:\wamp64\www\CI3.0\application\controllers\Msgboard.php 61
+ERROR - 22:02:58 --> Severity: Error --> Cannot access empty property D:\wamp64\www\CI3.0\application\views\msgboard.php 43
+ERROR - 22:04:46 --> 404 Page Not Found: Msgboard/msgboard
+ERROR - 22:05:25 --> 404 Page Not Found: Msgboard/msgboard
+ERROR - 22:05:43 --> 404 Page Not Found: Msboard/index
+ERROR - 22:05:43 --> 404 Page Not Found: Msboard/index
+ERROR - 22:06:12 --> 404 Page Not Found: Setmessage/index
+ERROR - 22:06:44 --> 404 Page Not Found: Setmessage/index
+ERROR - 22:06:51 --> 404 Page Not Found: Setmessage/index

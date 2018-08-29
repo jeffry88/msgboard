@@ -1,0 +1,31 @@
+.msgboder{
+    text-align: center;
+    /*background: url('../images/msbackground3.jpg') no-repeat 5px 5px;*/
+    margin-top: 20px;
+}
+.board-form{
+    width: 50%;
+    margin: auto;
+}
+.message-list{
+    width: 50%;
+    margin: 10px 336px;;
+}
+.page{
+    text-align: center;
+    margin-left: 400px;
+}
+#layui-btn-xs{
+     height: 22px;
+     line-height: 22px;
+     padding: 0 5px;
+     font-size: 12px;
+    display: inline-block;
+    background-color: #009688;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+ }

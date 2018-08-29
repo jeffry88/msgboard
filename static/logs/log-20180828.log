@@ -1,0 +1,39 @@
+ERROR - 10:54:07 --> 404 Page Not Found: Msgboard/msgboard
+ERROR - 10:54:44 --> 404 Page Not Found: Msgboard/msgboard
+ERROR - 10:55:03 --> 404 Page Not Found: Msgboard/msgboard
+ERROR - 17:30:40 --> Severity: Error --> Call to undefined method Msgboard_model::upmessage() D:\wamp64\www\CI3.0\application\controllers\Msgboard.php 120
+ERROR - 17:32:22 --> Severity: Error --> Call to undefined method Msgboard_model::upmessage() D:\wamp64\www\CI3.0\application\controllers\Msgboard.php 120
+ERROR - 17:35:45 --> Severity: Error --> Call to undefined method Msgboard_model::upmessage() D:\wamp64\www\CI3.0\application\controllers\Msgboard.php 120
+ERROR - 17:38:20 --> Severity: Error --> Call to undefined method Msgboard_model::upmessage() D:\wamp64\www\CI3.0\application\controllers\Msgboard.php 120
+ERROR - 17:38:43 --> Severity: Error --> Call to undefined method Msgboard_model::upmessage() D:\wamp64\www\CI3.0\application\controllers\Msgboard.php 120
+ERROR - 17:40:19 --> Severity: Error --> Call to undefined method Msgboard_model::upmessage() D:\wamp64\www\CI3.0\application\controllers\Msgboard.php 120
+ERROR - 17:44:20 --> Severity: Error --> Call to undefined method Msgboard_model::upmessage() D:\wamp64\www\CI3.0\application\controllers\Msgboard.php 120
+ERROR - 17:45:08 --> Severity: Error --> Call to undefined method Msgboard_model::upmessage() D:\wamp64\www\CI3.0\application\controllers\Msgboard.php 120
+ERROR - 17:49:04 --> Severity: Error --> Call to undefined method Msgboard_model::upmessage() D:\wamp64\www\CI3.0\application\controllers\Msgboard.php 120
+ERROR - 17:49:14 --> Severity: Error --> Call to undefined method Msgboard_model::upmessage() D:\wamp64\www\CI3.0\application\controllers\Msgboard.php 120
+ERROR - 17:50:03 --> Severity: Error --> Call to undefined method Msgboard_model::upmessage() D:\wamp64\www\CI3.0\application\controllers\Msgboard.php 120
+ERROR - 17:50:44 --> Severity: Error --> Call to undefined method Msgboard_model::upmessage() D:\wamp64\www\CI3.0\application\controllers\Msgboard.php 120
+ERROR - 17:52:01 --> Severity: Error --> Call to undefined method Msgboard_model::upmessage() D:\wamp64\www\CI3.0\application\controllers\Msgboard.php 120
+ERROR - 17:53:11 --> Severity: Error --> Call to undefined method Msgboard_model::upmessage() D:\wamp64\www\CI3.0\application\controllers\Msgboard.php 120
+ERROR - 17:54:47 --> Query error: Unknown column 'jjjjj传达' in 'field list' - Invalid query: UPDATE `messages` SET `jjjjj传达` = ''
+WHERE `user_name` = '可爱过去了 '
+ERROR - 17:58:28 --> Query error: Unknown column 'jjjjj个' in 'field list' - Invalid query: UPDATE `messages` SET `jjjjj个` = ''
+WHERE `user_name` = '可爱过去了 '
+ERROR - 17:58:32 --> Query error: Unknown column 'jjjjj个' in 'field list' - Invalid query: UPDATE `messages` SET `jjjjj个` = ''
+WHERE `user_name` = '可爱过去了 '
+ERROR - 17:59:29 --> Query error: Unknown column 'jjjjjscd' in 'field list' - Invalid query: UPDATE `messages` SET `jjjjjscd` = ''
+WHERE `user_name` = '可爱过去了'
+ERROR - 17:59:46 --> Query error: Unknown column 'jjjjjAVD' in 'field list' - Invalid query: UPDATE `messages` SET `jjjjjAVD` = ''
+WHERE `user_name` = '可爱过去了'
+ERROR - 18:01:43 --> Query error: Unknown column 'jjjjjAVD' in 'field list' - Invalid query: UPDATE `messages` SET `jjjjjAVD` = ''
+WHERE `user_name` = '可爱过去了'
+ERROR - 18:09:10 --> Query error: Unknown column 'jjjjjafd' in 'field list' - Invalid query: UPDATE `messages` SET `jjjjjafd` = ''
+WHERE `user_name` = '可爱过去了'
+ERROR - 18:09:13 --> Query error: Unknown column 'jjjjjafd' in 'field list' - Invalid query: UPDATE `messages` SET `jjjjjafd` = ''
+WHERE `user_name` = '可爱过去了'
+ERROR - 18:09:25 --> Query error: Unknown column 'jjjjj挨打' in 'field list' - Invalid query: UPDATE `messages` SET `jjjjj挨打` = ''
+WHERE `user_name` = '可爱过去了'
+ERROR - 18:12:42 --> Query error: Unknown column 'jjjjjio' in 'field list' - Invalid query: UPDATE `messages` SET `jjjjjio` = ''
+WHERE `user_name` = '可爱过去了'
+ERROR - 18:22:43 --> Query error: Unknown column 'username' in 'where clause' - Invalid query: UPDATE `messages` SET `user_name` = '可爱过去了', `message` = 'jjjjj但是'
+WHERE `username` = '可爱过去了'
