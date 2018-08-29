@@ -48,9 +48,9 @@
                         <li class="message"><?php echo $row['message'] ?></li>
                         <li><?php echo ' &nbsp 评论时间：', $row['time']?></li>
                     </ul>
-                    <button id="layui-btn-xs" class="change" value="<?php echo $row['user_name']?>">编辑</button>
+                    <button id="layui-btn-xs" class="change" value="<?php echo $row['id']?>">编辑</button>
 <!--                    <a href="--><?php //echo base_url('index.php/msgboard/delmessage')?><!--?&user_name=--><?php //echo $row['user_name']?><!--&">删除</a>-->
-                    <button id="layui-btn-xs" class="del" value="<?php echo $row['user_name']?>">删除</button>
+                    <button id="layui-btn-xs" class="del" value="<?php echo $row['id']?>">删除</button>
                 </div>
             <?php endforeach;?>
         </div>
@@ -80,14 +80,14 @@ layui.use('form', function(){
 $(document).ready(function() {
     $(".del").click(function (event) {
         event.preventDefault();
-        var user_name = $(this).val();
+        var id = $(this).val();
         //alert(user_name);
         //alert("jeigu");
         $.ajax(
             {
                 type:"post",
                 url:"<?php echo base_url('index.php/msgboard/delmessage')?>",
-                data:{"user_name":user_name},
+                data:{"id":id},
                 success:function (data) {
                     layer.msg('删除成功！', {
                         time: 0 //不自动关闭
@@ -98,10 +98,6 @@ $(document).ready(function() {
                         }
                     });
                 }
-                // error: function()
-                // {
-                //     alert("删除失败!");
-                // }
             }
         );
     });
@@ -111,7 +107,7 @@ $(document).ready(function() {
     $(".change").click(function (event) {
         event.preventDefault();
         var message = $(this).prev().find('.message').text();
-        var user_name = $(this).val();
+        var id = $(this).val();
         //alert(user_name);
         input = $(' <input onkeyup="value=value.replace(/[^\\a-\\z\\A-\\Z0-9\u4E00-\u9FA5\\，\\。\\？\\；]/g,\'\')"\n' +
             '                               onpaste="value=value.replace(/[^\\a-\\z\\A-\\Z0-9\u4E00-\u9FA5\\，\\。\\？\\；]/g,\'\')"\n' +
@@ -119,14 +115,14 @@ $(document).ready(function() {
             '                               type="text" name="newmsg" class="newmsg" id="newmsg" required  lay-verify="required"\n' +
             '                               autocomplete="off" class="layui-input" value="'+message+'">' );
         $(this).prev().find('.message').replaceWith(input);
-        newbtn = $('<button id="layui-btn-xs" class="updata" value="'+user_name+'">保存</button>');
+        newbtn = $('<button id="layui-btn-xs" class="updata" value="'+id+'">保存</button>');
         $(this).replaceWith(newbtn);
     });
 
     $('.main').on('click', '.updata', function(event)
     {
         event.preventDefault();
-        var user_name = $(this).val();
+        var id = $(this).val();
         var message = $(this).prev().find('.newmsg').val();
         //alert(message);
         //alert("jeigu");
@@ -134,7 +130,7 @@ $(document).ready(function() {
             {
                 type:"post",
                 url:"<?php echo base_url('index.php/msgboard/upmessage')?>",
-                data:{"user_name":user_name,"message":message},
+                data:{"id":id,"message":message},
                 success:function (data) {
                     layer.msg('修改成功！', {
                         time: 0 //不自动关闭

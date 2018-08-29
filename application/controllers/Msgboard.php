@@ -57,11 +57,11 @@ class Msgboard extends MY_Controller
      */
     public function delMessage()
     {
-        $user_name = $this->input->post('user_name');
+        $id = $this->input->post('id');
         //var_dump($user_name);
         //exit();
         $this->load->model('Msgboard_model');
-        $data = $this->Msgboard_model->delmessage($user_name);
+        $data = $this->Msgboard_model->delmessage($id);
         if($data){
             //redirect('/msgboard/', 'refresh');
             return $data;
@@ -78,10 +78,10 @@ class Msgboard extends MY_Controller
 
     public function upMessage()
     {
-        $user_name = $this->input->post('user_name');
+        $id = $this->input->post('id');
         $message = $this->input->post('message');
         $this->load->model('Msgboard_model');
-        $data = $this->Msgboard_model->updmessage($user_name,$message);
+        $data = $this->Msgboard_model->updmessage($id,$message);
         if($data){
             return $data;
         }else{

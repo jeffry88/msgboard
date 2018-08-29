@@ -43,7 +43,7 @@ class Msgboard_model extends MY_Model
     /**
      * 删除留言
      */
-    public function delmessage($user_name)
+    public function delmessage($id)
     {
         if (false === $this->defdb->conn_id) {
             $this->error = (object)$this->defdb->error();
@@ -51,7 +51,7 @@ class Msgboard_model extends MY_Model
 
             return false;
         }else{
-            $this->db->where('user_name',$user_name);
+            $this->db->where('id',$id);
             $data = $this->db->delete('messages');
             //$this->getmessage($start,$limit);
             return $data;
@@ -62,7 +62,7 @@ class Msgboard_model extends MY_Model
     /**
      * 修改留言
      */
-    public function updmessage($user_name,$message)
+    public function updmessage($id,$message)
     {
         if (false === $this->defdb->conn_id) {
             $this->error = (object)$this->defdb->error();
@@ -74,11 +74,11 @@ class Msgboard_model extends MY_Model
 //            $data = $this->db->update('messages', $message);
 //            return $data;
             $data = array(
-                'user_name' => $user_name,
+                'id' => $id,
                 'message' => $message,
             );
 
-            $this->db->where('user_name', $user_name);
+            $this->db->where('id', $id);
             $this->db->update('messages', $data);
         }
     }
@@ -99,7 +99,7 @@ class Msgboard_model extends MY_Model
 //            $offset=$this->uri->segment(3);
            // $this->db->limit($perPage,$offset);
             $this->db->limit($limit,$start);
-            $this->db->select('user_name,message,time');
+            $this->db->select('id,user_name,message,time');
             $this->db->order_by("time","desc");
             $query = $this->db->get('messages');
 
